@@ -26,15 +26,20 @@ class Solution:
                 # Check if the word exists.
                 if word == "": 
                     common = False
-                    continue
 
-                # Check that we're not comparing chars in the longest word in the list. Check that we're not checking for chars that excede the length of the checked word.
-                if longest_word != word and i < len(word):       
+                # Check that we're not comparing chars in the longest word in the list.
+                if word == longest_word:
+                    common = True
+
+                #  Check that we're not checking for chars that excede the length of the checked word.
+                if word != longest_word and i < len(word):       
                     if c == word[i]:  
                         common = True
                     else:
                         common = False
-                        
+                if word != longest_word and i >= len(word): # we're not comparing a word to itself and the char index is outside the range of the current word i.e. i >= len(word)
+                    common = False 
+                                       
                 common_chars_bool.append(common)
 
             if all(common_chars_bool):
@@ -54,8 +59,8 @@ class Solution:
 
 
 if __name__ == '__main__':
-    expected_output = ["a", "", "", "flower", "fl", "a", "", ""]
-    test_cases =  [["ab", "a"], ["b","cb","cab"], ["abab","aba",""],  ["flower","flower","flower","flower"], ["flower","flow","flight"], ["a"], ["","b"], ["dog","racecar","car"]]
+    expected_output = ["", "a", "", "", "flower", "fl", "a", ""]
+    test_cases =  [["","b"], ["ab", "a"], ["b","cb","cab"], ["abab","aba",""],  ["flower","flower","flower","flower"], ["flower","flow","flight"], ["a"], ["dog","racecar","car"]]
 
     for i, case in enumerate(test_cases):
         solve = Solution().longestCommonPrefix(case)
