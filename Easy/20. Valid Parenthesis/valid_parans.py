@@ -71,7 +71,7 @@ class Solution:
         else: 
             return False
 
-# MUCH cleaner/succint solution.
+# MUCH cleaner/succinct solution.
 class Solution2:
     def isValid(self, s: str) -> bool:
         for i in range(len(s)):
