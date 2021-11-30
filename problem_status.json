@@ -49,6 +49,13 @@
             "name": "Find All Numbers In Disappeared Array",
             "difficulty": "Easy",
             "completed": "False"
+        },
+
+        {
+            "id": "217",
+            "name": "Contains Duplicate",
+            "difficulty": "Easy",
+            "completed": "False"
         }
     ]
 }
