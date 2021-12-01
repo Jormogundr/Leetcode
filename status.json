@@ -52,5 +52,11 @@
         "name": "Best Time to Buy And Sell Stock",
         "difficulty": "Easy",
         "completed": "True"
+    },
+    {
+        "id": "242",
+        "name": "Valid Anagram",
+        "difficulty": "Easy",
+        "completed": "True"
     }
 ]
