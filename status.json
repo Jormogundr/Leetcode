@@ -58,5 +58,11 @@
         "name": "Valid Anagram",
         "difficulty": "Easy",
         "completed": "True"
+    },
+    {
+        "id": "238",
+        "name": "Product of Array Except Self",
+        "difficulty": "Medium",
+        "completed": "True"
     }
 ]

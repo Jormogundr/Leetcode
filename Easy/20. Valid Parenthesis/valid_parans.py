@@ -71,7 +71,8 @@ class Solution:
         else: 
             return False
 
-# MUCH cleaner/succinct solution.
+# MUCH cleaner/succinct solution. The idea here is simply to replace immediately paired paranethesis within the string s. This makes use of the fact
+# that the innermost pair of paranthesis must open and immediately close, if the string is to be valid.
 class Solution2:
     def isValid(self, s: str) -> bool:
         for i in range(len(s)):
