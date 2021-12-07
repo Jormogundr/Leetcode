@@ -22,14 +22,19 @@ class Solution:
             return True
         else:
             return False
+
+def testCases(test_cases, expected_output):
+    for i, case in enumerate(test_cases):
+        solve = Solution().isPalindrome(case)
+        if solve == expected_output[i]:
+            print(case, "Success")
+        else:
+            print(case, "Fail")
+
+if __name__ == '__main__':
+    expected_output = [True, True, False, False, False]
+    test_cases =  [0, 121, -121, 10, -101]
+    testCases(test_cases, expected_output)
         
 
             
-
-if __name__ == '__main__':
-    test_cases = [0, 121, -121, 10, -101]
-    expected_output = [True, True, False, False, False]
-
-    for case in test_cases:
-        solve = Solution().isPalindrome(case)
-        print(solve)
