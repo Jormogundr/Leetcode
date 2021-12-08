@@ -33,8 +33,6 @@ class Solution:
 
         return sum
 
-
-
 if __name__ == '__main__':
     expected_output = [1476, 3, 4, 9, 58, 1994]
     test_cases = ["MCDLXXVI", "III", "IV", "IX", "LVIII", "MCMXCIV"]
