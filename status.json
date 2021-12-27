@@ -64,5 +64,19 @@
         "name": "Product of Array Except Self",
         "difficulty": "Medium",
         "completed": "True"
+    },
+    {
+        "id": "152",
+        "name": "Maximum Product Subarray",
+        "difficulty": "Medium",
+        "completed": "True",
+        "languages": "Python, C++"
+    },
+    {
+        "id": "206",
+        "name": "Reverse Linked List",
+        "difficulty": "Easy",
+        "completed": "True",
+        "languages": "Python, C++"
     }
 ]

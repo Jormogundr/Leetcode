@@ -26,7 +26,7 @@ class Solution:
 
 def testCases(test_cases, expected_output):
     for i, case in enumerate(test_cases):
-        solve = Solution().containsDuplicate(case)
+        solve = Solution().containsDuplicateFast(case)
         if solve == expected_output[i]:
             print(case, "Success")
         else:
