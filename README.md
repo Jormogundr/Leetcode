@@ -8,5 +8,3 @@ In general, my workflow is currently:
 - Write a Python3 implementation - work out any bugs.
 - Find ways to optimize space/time complexity.
 - Rewrite the program in C++.
-
-CURRENTLY WORKING ON: Easy/13. Roman To Integer c++ implementation
