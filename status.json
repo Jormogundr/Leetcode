@@ -76,7 +76,7 @@
         "id": "206",
         "name": "Reverse Linked List",
         "difficulty": "Easy",
-        "completed": "True",
+        "completed": "True, False",
         "languages": "Python, C++"
     }
 ]

@@ -23,7 +23,7 @@ public:
 
         ListNode* prev = nullptr;
         ListNode* current = head;
-        ListNode* next = current->next;
+        ListNode* next = nullptr;
         while(current != nullptr) {
             next = current->next;
             current->next = prev;
@@ -39,6 +39,7 @@ class SinglyLinkedList {
 public:
     ListNode* head;
     SinglyLinkedList() {head = nullptr;} // consturctor, with default value of a null head
+    SinglyLinkedList(ListNode* node) {head = node;} // sets the head to the passed ptr
 
     // Returns the number of nodes in the linked list.
     int listLength() {
@@ -69,7 +70,7 @@ public:
         return list;
     }
 
-    void insert(ListNode* node_to_insert) {
+   void insert(ListNode* node_to_insert) {
         if (head == nullptr) {
             head = node_to_insert;
             return;
@@ -81,18 +82,29 @@ public:
         }
         node->next = node_to_insert;
         return;
-    }
+   }
 };
 
-int testCases(){
+void testCases(){
     int cases[5] = {1,2,3,4,5};
     int output[5] = {5,4,3,2,1};
 
+    // Create the singly linked list which we will reverse
     SinglyLinkedList sll;
-    for (int i = 1; i < 5; i++) {
-        ListNode* node = ListNode(cases[i]);
+    for (int i = 0; i < 5; i++) {
+        ListNode node(cases[i], sll.head);
         sll.insert(node);
     } 
+    
+    Solution solve;
+    ListNode* solution = solve.reverseList(sll.head);
+    SinglyLinkedList reversed_sll(solution);
+    if (reversed_sll.getList() == output) {
+        cout << "Success!" << endl;
+    }
+    else {
+        cout << "Failure" << endl;
+    }
 }
 
 int main() {
