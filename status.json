@@ -78,5 +78,12 @@
         "difficulty": "Easy",
         "completed": "True, False",
         "languages": "Python, C++"
+    },
+    {
+        "id": "141",
+        "name": "Linked List Cycle",
+        "difficulty": "Easy",
+        "completed": "True, True",
+        "languages": "Python, C++"
     }
 ]
