@@ -92,5 +92,12 @@
         "difficulty": "Medium",
         "completed": "True, True",
         "languages": "Python, C++"
+    },
+    {
+        "id": "153",
+        "name": "Find Minimum in Rotated Sorted Array",
+        "difficulty": "Medium",
+        "completed": "True, True",
+        "languages": "Python, C++"
     }
 ]

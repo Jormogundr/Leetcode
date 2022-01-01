@@ -3,6 +3,8 @@
 #include <algorithm>
 using namespace std;
 
+// See the .py file for test cases.
+
 class Solution {
 public:
     int maxArea(vector<int>& height) {
