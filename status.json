@@ -3,67 +3,78 @@
         "id": "1",
         "name": "Two_Sum",
         "difficulty": "Easy",
-        "completed": "True"
+        "completed": "True",
+        "languages": "Python, C++"
     },
     {
         "id": "2",
         "name": "AddTwo Numbers",
         "difficulty": "Medium",
-        "completed": "False"
+        "completed": "False",
+        "languages": "Python, C++"
     },
     {
         "id": "3",
         "name": "Longest Substring Without Repeating Characters",
         "difficulty": "Medium",
-        "completed": "False"
+        "completed": "True, True",
+        "languages": "Python, C++"
     },
     {
         "id": "9",
         "name": "Palindrome Number",
         "difficulty": "Easy",
-        "completed": "True"
+        "completed": "True",
+        "languages": "Python, C++"
     },
     {
         "id": "13",
         "name": "Roman to Integer",
         "difficulty": "Easy",
-        "completed": "True"
+        "completed": "True",
+        "languages": "Python, C++"
     },
     {
         "id": "14",
         "name": "Longest Common Prefix",
         "difficulty": "Easy",
-        "completed": "True"
+        "completed": "True",
+        "languages": "Python, C++"
     },
     {
         "id": "448",
         "name": "Find All Numbers In Disappeared Array",
         "difficulty": "Easy",
-        "completed": "False"
+        "completed": "False",
+        "languages": "Python, C++"
     },
     {
         "id": "227",
         "name": "Contains Duplicates",
         "difficulty": "Easy",
-        "completed": "True"
+        "completed": "True",
+        "languages": "Python, C++"
     },
     {
         "id": "121",
         "name": "Best Time to Buy And Sell Stock",
         "difficulty": "Easy",
-        "completed": "True"
+        "completed": "True",
+        "languages": "Python, C++"
     },
     {
         "id": "242",
         "name": "Valid Anagram",
         "difficulty": "Easy",
-        "completed": "True"
+        "completed": "True",
+        "languages": "Python, C++"
     },
     {
         "id": "238",
         "name": "Product of Array Except Self",
         "difficulty": "Medium",
-        "completed": "True"
+        "completed": "True",
+        "languages": "Python, C++"
     },
     {
         "id": "152",
@@ -98,6 +109,20 @@
         "name": "Find Minimum in Rotated Sorted Array",
         "difficulty": "Medium",
         "completed": "True, True",
+        "languages": "Python, C++"
+    },
+    {
+        "id": "424",
+        "name": "Longest Repeating Character Replacement",
+        "difficulty": "Medium",
+        "completed": "False, False",
+        "languages": "Python, C++"
+    },
+    {
+        "id": "200",
+        "name": "Number of Islands",
+        "difficulty": "Medium",
+        "completed": "True, False",
         "languages": "Python, C++"
     }
 ]
