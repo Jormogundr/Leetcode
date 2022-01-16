@@ -21,7 +21,7 @@ public:
         return num_islands;
     }
 
-    void dfs(vector<vector<char>>grid, int i, int j) {
+    void dfs(vector<vector<char>>& grid, int i, int j) {
         int m = grid.size();
         int n = grid[0].size();
 
@@ -42,8 +42,26 @@ public:
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void testCases() {
-    return;
-}
+    vector<vector<char>> map1 {
+        {"1","1","0","0","0"},
+        {"1","1","0","0","0"},
+        {"0","0","1","0","0"},
+        {"0","0","0","1","1"}
+    };
+
+    vector<vector<char>> map2 {
+        {"1","1","1","1","0"},
+        {"1","1","0","1","0"},
+        {"1","1","0","0","0"},
+        {"0","0","0","0","0"}
+    };
+
+    vector<int> output {3, 1};
+    int solve1 = Solution().numIslands(map1);
+
+    }
+
+
 
 int main() {
     testCases();
