@@ -8,6 +8,7 @@ The number of nodes in the list is sz.
 """
 
 # Definition for singly-linked list.
+from platform import node
 from typing import List
 
 
@@ -21,23 +22,34 @@ class Solution:
         if head == None or head.next == None:
             return None
 
-        node = head
-        prev_node, next_node = node, node.next
+        sz = self.getSizeOfLinkedList(head, n)
+        nth_node_position = sz - n # position of node to be removed (where the head is position 1)
+
         count = 1
-        while node != None:
-            if count == n:
-                count = 1
-                next_node = node.next # node n + 1
-                node = node.next
-                continue
-            if node.next == None:
-                break
-            prev_node = node # node n - 1
-            node = node.next
-            count += 1
-        prev_node.next = next_node
-        return head
+        curr = head
+        while curr != None:
+            if count == nth_node_position - 1:
+                curr.next = curr.next.next
+                return head
+            if count == nth_node_position:
+                head = curr.next
+                return head
+            curr = curr.next
+            count +=1 
+
+    # Given the head of a linked list and the nth node (from end of list) to remove, determine the position of the nth node and return it as an integer.
+    def getSizeOfLinkedList(self, head, n):
+        curr = head
+        count, sz = 1, 1
         
+        while curr != None:
+            if count % n == 0:
+                count = 1
+            count += 1
+            sz += 1
+            curr = curr.next
+        return sz
+
     # Convert a list to a linked list and return the head. 
     def convertToLinkedList(self, list):
         if len(list) == 0: 

@@ -124,5 +124,12 @@
         "difficulty": "Medium",
         "completed": "True, False",
         "languages": "Python, C++"
+    },
+    {
+        "id": "19",
+        "name": "Remove Nth Node From End of List",
+        "difficulty": "Medium",
+        "completed": "True, True",
+        "languages": "Python, C++"
     }
 ]
