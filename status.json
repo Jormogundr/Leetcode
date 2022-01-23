@@ -131,5 +131,12 @@
         "difficulty": "Medium",
         "completed": "True, True",
         "languages": "Python, C++"
+    },
+    {
+        "id": "647",
+        "name": "Palindromic Substrings",
+        "difficulty": "Medium",
+        "completed": "True, False",
+        "languages": "Python, C++"
     }
 ]
