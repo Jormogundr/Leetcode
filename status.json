@@ -145,5 +145,12 @@
         "difficulty": "Medium",
         "completed": "True, True",
         "languages": "Python, C++"
+    },
+    {
+        "id": "191",
+        "name": "Number of 1 Bits",
+        "difficulty": "Easy",
+        "completed": "True, True",
+        "languages": "Python, C++"
     }
 ]
