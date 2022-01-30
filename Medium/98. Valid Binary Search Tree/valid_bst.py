@@ -9,6 +9,9 @@ A valid BST is defined as follows:
 
 The number of nodes in the tree is in the range [1, 10E4].
 -2E31 <= Node.val <= 2E31 - 1
+
+Implementation notes: I had trouble with BSTs where left subtrees of nodes to the right of the root
+would contain values less than the root. I was not tracking min or max values. 
 """
 
 # Definition for a binary tree node.
