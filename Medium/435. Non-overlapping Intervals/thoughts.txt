@@ -1,0 +1,6 @@
+First, Sort array based on the starting value of each interval. O(logn)
+
+Then, loop throught the array of intervals, and follow steps (O(n)):
+    1. Compare two adjacnet intervals at a time.
+    2. If the second intervals start is less than the first intervals end then we know they overlap. Else, continue on (start at step 1 for next two intervals)
+    3. To decide which one gets removed, remove the interval with the larger end value. 

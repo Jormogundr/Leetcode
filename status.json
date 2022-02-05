@@ -159,5 +159,12 @@
         "difficulty": "Easy",
         "completed": "True, True",
         "languages": "Python, C++"
+    },
+    {
+        "id": "435",
+        "name": "Non-overlapping Intervals",
+        "difficulty": "Medium",
+        "completed": "True, True",
+        "languages": "Python, C++"
     }
 ]
