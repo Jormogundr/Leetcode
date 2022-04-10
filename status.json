@@ -166,5 +166,19 @@
         "difficulty": "Medium",
         "completed": "True, True",
         "languages": "Python, C++"
+    },
+    {
+        "id": "105",
+        "name": "Construct Binary Tree from Preorder and Inorder Traversal",
+        "difficulty": "Medium",
+        "completed": "True, False",
+        "languages": "Python, C++"
+    },
+    {
+        "id": "347",
+        "name": "Top K Frequent Elements",
+        "difficulty": "Medium",
+        "completed": "True, False",
+        "languages": "Python, C++"
     }
 ]
