@@ -178,7 +178,14 @@
         "id": "347",
         "name": "Top K Frequent Elements",
         "difficulty": "Medium",
-        "completed": "True, False",
+        "completed": "True, True",
+        "languages": "Python, C++"
+    },
+    {
+        "id": "133",
+        "name": "Clone Graph",
+        "difficulty": "Medium",
+        "completed": "True, True",
         "languages": "Python, C++"
     }
 ]

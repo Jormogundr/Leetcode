@@ -15,7 +15,7 @@ public:
         unordered_map<int, int> freqMap;
         
         for (int num : nums) {
-            // If the key already exists, increment it
+            // If the key already exists, increment it. Else, add to map.
             if (freqMap.find(num) != freqMap.end()) {
                 freqMap[num]++;
             }
@@ -24,6 +24,7 @@ public:
             }
         }
 
+        // https://www.educative.io/edpresso/how-to-sort-a-map-by-value-in-cpp
         vector<pair<int,int>> vec;
         unordered_map<int, int>::iterator it;
         for (it = freqMap.begin(); it != freqMap.end(); it++) { 
@@ -33,9 +34,8 @@ public:
         reverse(vec.begin(), vec.end());
 
         vector<int> mostFrequentKeys;
-        for (int i = 0; i < vec.size(); i++)
-        {
-            mostFrequentKeys.insert(vec[i].first);
+        for (int i = 0; i < k; i++) {
+            mostFrequentKeys.push_back(vec[i].first);
         }
         
         return mostFrequentKeys;
