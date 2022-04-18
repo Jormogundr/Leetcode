@@ -187,5 +187,19 @@
         "difficulty": "Medium",
         "completed": "True, True",
         "languages": "Python, C++"
+    },
+    {
+        "id": "207",
+        "name": "Course Schedule",
+        "difficulty": "Medium",
+        "completed": "False, False",
+        "languages": "Python, C++" 
+    },
+    {
+        "id": "15",
+        "name": "3Sum",
+        "difficulty": "Medium",
+        "completed": "False, False",
+        "languages": "Python, C++"
     }
 ]

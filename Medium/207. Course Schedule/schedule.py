@@ -15,3 +15,63 @@ All the pairs prerequisites[i] are unique.
 
  
 """
+
+# https://www.youtube.com/watch?v=EgI5nU9etnU
+class Solution:
+    def canFinish(self, numCourses, prerequisites):
+        courseMap = { x:[] for x in range(numCourses) }
+        visitedSet = set()
+
+        # populate the courseMap using the provided course adajcency list
+        for course, preReq in prerequisites:
+            courseMap[course].append(preReq)
+        
+        # use dfs to traverse the prequisites for a given course
+        def dfs(course):
+            # detect if a loop in prerequisite courses exists and return false
+            if course in visitedSet:
+                return False
+            # if the coursemap shows no prequisites for a given course and return true 
+            if courseMap[course] == []:
+                return True
+            
+            visitedSet.add(course)
+            # run dfs on each entry in the course map by using recursion
+            for preReq in courseMap[course]:
+                if dfs(preReq):
+                    visitedSet.remove(course)
+                    courseMap[preReq] = []
+                    return True
+                else:
+                    return False
+
+        for course in range(numCourses):
+            if not dfs(course):
+                return False
+        return True
+
+        
+                
+
+
+# //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+# ////////////                       DO NOT INCLUDE BELOW LINES IN LEETCODE SUBMISSION                      ////////////
+# //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+def testCases():
+    numCourses = 4
+    preRequisitives =  [[2,0],[1,0],[3,1],[3,2],[1,3]]
+    output = False
+
+    solve = Solution().canFinish(numCourses, preRequisitives) 
+        
+    if solve == output:
+        print("Success ", solve, " == ", output)
+    else:
+        print("Fail ", solve, " =/= ", output)
+    
+def main():
+    testCases()
+
+if __name__ == '__main__':
+    main()
+        
