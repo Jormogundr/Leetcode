@@ -7,7 +7,6 @@ Given an integer n, return an array ans of length n + 1 such that for each i (0 
 
 def countBits(n):
     ans = []
-    binaryForm = bin(n)
     for elem in range(0, n + 1):
         binaryElemString = bin(elem)[2::]
         apnd = len([x for x in binaryElemString if x == '1'])

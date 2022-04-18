@@ -201,5 +201,19 @@
         "difficulty": "Medium",
         "completed": "False, False",
         "languages": "Python, C++"
+    },
+    {
+        "id": "338",
+        "name": "Counting Bits",
+        "difficulty": "Easy",
+        "completed": "True, False",
+        "languages": "Python, C++"
+    },
+    {
+        "id": "151",
+        "name": "Reverse Words in a String",
+        "difficulty": "Medium",
+        "completed": "True, False",
+        "languages": "Python, C++"
     }
 ]
