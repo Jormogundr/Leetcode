@@ -222,5 +222,33 @@
         "difficulty": "Medium",
         "completed": "True, True",
         "languages": "Python, C++"
+    },
+    {
+        "id": "104",
+        "name": "Maximum Depth of Binary True",
+        "difficulty": "Easy",
+        "completed": "True, False",
+        "languages": "Python, C++"
+    },
+    {
+        "id": "268",
+        "name": "Missing Number",
+        "difficulty": "Easy",
+        "completed": "True, False",
+        "languages": "Python, C++"
+    },
+    {
+        "id": "100",
+        "name": "Same Tree",
+        "difficulty": "Easy",
+        "completed": "True, False",
+        "languages": "Python, C++"
+    },
+    {
+        "id": "102",
+        "name": "Binary Tree Level Order Traversal",
+        "difficulty": "Medium",
+        "completed": "True, True",
+        "languages": "Python, C++"
     }
 ]

@@ -14,7 +14,6 @@ There is at least one word in s.
 """
 
 def reverseWords(s: str) -> str:
-    s = "  hello world  "
     reversedSentence = []
     l,r = 0, 0
     n = len(s)
