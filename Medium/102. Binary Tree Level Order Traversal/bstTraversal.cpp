@@ -30,17 +30,17 @@ public:
                 TreeNode* temp = queue[0];
                 queue.erase(queue.begin());
                 if (temp->left != nullptr) {
-                    levelList.insert(levelList.begin(), temp->left->val);
-                    queue.insert(queue.begin(), temp->left);
+                    levelList.insert(levelList.end(), temp->left->val);
+                    queue.insert(queue.end(), temp->left);
                 }
                 if (temp->right != nullptr) {
-                    levelList.insert(levelList.begin(), temp->right->val);
-                    queue.insert(queue.begin(), temp->right);
+                    levelList.insert(levelList.end(), temp->right->val);
+                    queue.insert(queue.end(), temp->right);
                 }
                 size--;
             }
         if (!levelList.empty()) {
-            levelOrder.insert(levelOrder.begin(), levelList);
+            levelOrder.insert(levelOrder.end(), levelList);
         }
         }
         return levelOrder;
