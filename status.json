@@ -257,5 +257,12 @@
         "difficulty": "Medium",
         "completed": "True, False",
         "languages": "Python, C++"
+    },
+    {
+        "id": "297",
+        "name": "Serialize and Deserialize Binary Tree",
+        "difficulty": "Medium",
+        "completed": "True, True",
+        "languages": "Python, C++"
     }
 ]
