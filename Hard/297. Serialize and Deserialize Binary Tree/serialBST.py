@@ -20,6 +20,7 @@ class TreeNode(object):
 
 class Codec:
 
+    # Use BFS to build a list of node values in level order.
     def serialize(self, root):
         """Encodes a tree to a single string.
         
@@ -27,27 +28,26 @@ class Codec:
         :rtype: str
         """
         if not root:
-            return []
+            return ''
 
-        treeToString = []
+        treeToString = [str(root.val)]
         queue = [root]
 
         while queue != []:
             temp = queue[0]
             queue.remove(temp)
-            treeToString.append(str(temp.val))
-            if temp.left:
-                queue.append(temp.left)
-            else:
-                treeToString.append("None")
-            if temp.right:
-                queue.append(temp.right)
-            else:
-                treeToString.append("None")
+            children = [temp.left, temp.right]
+
+            for child in children:
+                if child:
+                    queue.append(child)
+                    treeToString.append(str(child.val))
+                else:
+                    treeToString.append('None')
 
         return ",".join(treeToString)
         
-
+    # Use a list representing level order traversal of nodes in tree to re-build the tree.
     def deserialize(self, data):
         """Decodes your encoded data to tree.
         
@@ -55,9 +55,28 @@ class Codec:
         :rtype: TreeNode
         """
         data = data.split(",")
+        n = len(data)
+        if n <= 1:
+            return None
+
         root = TreeNode(int(data[0]))
         queue = [root]
+        i = 1
+
+        while i < n and queue != []:
+            temp = queue[0]
+            queue.remove(temp)
+            if data[i] != 'None':
+                temp.left = TreeNode(int(data[i]))
+                queue.append(temp.left)
+            i += 1
+
+            if i < n and data[i] != 'None':
+                temp.right = TreeNode(int(data[i]))
+                queue.append(temp.right)
+            i += 1
         
+        return root
             
 
 
@@ -75,7 +94,7 @@ def testCases():
     root.right.left = TreeNode(4)
     root.right.right = TreeNode(5)
 
-    output = [1,2,3,None,None,4,5]
+    output = [1,2,3,'None','None',4,5]
 
     ser = Codec().serialize(root) 
     deser = Codec().deserialize(ser)
