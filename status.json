@@ -261,8 +261,22 @@
     {
         "id": "297",
         "name": "Serialize and Deserialize Binary Tree",
-        "difficulty": "Medium",
+        "difficulty": "Hard",
         "completed": "True, True",
+        "languages": "Python, C++"
+    },
+    {
+        "id": "112",
+        "name": "Path Sum",
+        "difficulty": "Easy",
+        "completed": "True, True",
+        "languages": "Python, C++"
+    },
+    {
+        "id": "124",
+        "name": "Binary Tree Maximum Path Sum",
+        "difficulty": "Hard",
+        "completed": "False, False",
         "languages": "Python, C++"
     }
 ]
