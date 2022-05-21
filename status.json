@@ -234,7 +234,7 @@
         "id": "268",
         "name": "Missing Number",
         "difficulty": "Easy",
-        "completed": "True, False",
+        "completed": "True, True",
         "languages": "Python, C++"
     },
     {
