@@ -278,5 +278,12 @@
         "difficulty": "Hard",
         "completed": "False, False",
         "languages": "Python, C++"
+    },
+    {
+        "id": "104",
+        "name": "Maximum Depth of Binary Tree",
+        "difficulty": "Easy",
+        "completed": "True, True",
+        "languages": "Python, C++"
     }
 ]
