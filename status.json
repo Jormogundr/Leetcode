@@ -285,5 +285,20 @@
         "difficulty": "Easy",
         "completed": "True, True",
         "languages": "Python, C++"
+    },
+    {
+        "id": "57",
+        "name": "Insert Interval",
+        "difficulty": "Medium",
+        "completed": "False, False",
+        "languages": "Python, C++"
+    },
+    {
+        "id": "704",
+        "name": "Binary Search",
+        "difficulty": "Easy",
+        "completed": "True, True",
+        "languages": "Python, C++"
     }
+
 ]
