@@ -1,4 +1,5 @@
 #include <vector>
+
 class Solution {
 public:
     std::vector<std::vector<int>> floodFill(std::vector<std::vector<int>>& image, int sr, int sc, int newColor) {
@@ -33,3 +34,7 @@ public:
     int replaced_;
     int newColor_;
 };
+
+int main() {
+    return 0;
+}
